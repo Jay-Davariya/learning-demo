@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #fafeff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.back {
+  width: 2%;
+  background-color: #898a8a;
+  color: white;
+  padding: 17px 28px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.container-fluid {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  text-align: left;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+
+.container {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  text-align: left;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+input[type="gender"] {
+  width: 8%;
+  padding: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#userDropdown {
+  width: 11%;
+  padding: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form {
+  height: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px solid #d4cece;
+}
+.col-1 {
+  margin-top: 18px;
+  text-align: center;
+  float: right;
+}
+
+.col-0 {
+  float: right;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.table {
+  text-align: center;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 25%;
+  background-color: #aeeeee;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #7debff;
+}
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  border-top: 1px solid #b7b7b7;
+}
+.footer-ghost {
+  height: 115px;
+}
+.table {
+  text-align: center;
+  
+}
