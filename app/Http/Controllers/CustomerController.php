@@ -145,7 +145,8 @@ class CustomerController extends Controller
         $customer->delete();
 
         // Optionally return a response
-        return redirect()->route('customer.store')->with('success', 'customer deleted');
+        Session::flash('success', 'customer Deleted successfully');
+        return redirect()->back();
     }
-    
+        
 }
