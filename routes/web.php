@@ -55,6 +55,9 @@ Route::delete('customer/{id}', [CustomerController::class, 'destroy'])->name('cu
 //     'except' => ['customer', 'store']   
 // ]); 
 
+Route::get('upload-ui', [CustomerController::class, 'uploadUi' ]);
+Route::post('file-upload', [CustomerController::class, 'FileUpload' ])->name('FileUpload');
+
 Route::get('customer-data', [CustomerController::class, 'getData'])->name('customer.data');
 
 Route::get('/getproduct/{id}', [ProductController::class, 'getproduct'])->name('getproduct');

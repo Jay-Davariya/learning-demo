@@ -81,6 +81,23 @@ class CustomerController extends Controller
         return response()->json($citys);
     }
 
+    public  function uploadUi()
+    {
+        return view('upload-view');
+    }
+    /**
+     * File Upload Method
+     *
+     * @return void
+     */
+    public  function FileUpload(Request $request)
+    {
+        $image = $request->file('file');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('images'),$imageName);
+        return response()->json(['success'=>$imageName]);
+    }
+
     public function store(CustomerRequest $request)
     {
         $data = $request->except('product');
