@@ -63,21 +63,21 @@ class CustomerController extends Controller
     {
         $shopkeepers = Shopkeeper::pluck('id', 'name');
         $countrys = Country::pluck('id', 'country');
-        $states = State::pluck('country', 'state');
-        $citys = City::pluck('state', 'city');
+        $states = State::pluck('country_id', 'state');
+        $citys = City::pluck('state_id', 'city');
 
         return view('create', compact('shopkeepers', 'countrys', 'states', 'citys'));
     }
 
     public function getStates($id)
     {
-        $states = State::where('country', $id)->pluck('state', 'id');
+        $states = State::where('country_id', $id)->pluck('state', 'id');
         return response()->json($states);
     }
 
     public function getCities($id)
     {
-        $citys = City::where('state', $id)->pluck('city', 'id');
+        $citys = City::where('state_id', $id)->pluck('city', 'id');
         return response()->json($citys);
     }
 
@@ -98,6 +98,9 @@ class CustomerController extends Controller
         return response()->json(['success'=>$imageName]);
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(CustomerRequest $request)
     {
         $data = $request->except('product');
@@ -165,5 +168,5 @@ class CustomerController extends Controller
         Session::flash('success', 'customer Deleted successfully');
         return redirect()->back();
     }
-        
+
 }
