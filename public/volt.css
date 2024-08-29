@@ -38,6 +38,16 @@
     padding-bottom: 4px;
 }
 
+.datepicker-picker {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.datepicker-dropdown .datepicker-picker {
+    box-shadow: 0 2px 3px rgba(17, 24, 39, 0.1), 0 0 0 1px rgba(17, 24, 39, 0.1);
+}
+
 .dropzone {
     background: #e3e6ff;
     border-radius: 13px;

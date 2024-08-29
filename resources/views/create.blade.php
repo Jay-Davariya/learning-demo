@@ -139,19 +139,21 @@
                 </div>
             </div>
 
-            <div class="row mb-3 mt-3" id="dropzone">
+            <div class="row mb-0">
+                <div class="col-md-12 offset-md-4">
+                    <button type="submit" class="btn btn-primary me-3">Submit</button>
+                <a type="button" href="{{ url('customer') }}" class="btn btn-primary ms-auto">Back</a>
+            </div>
+
+            <div class="row mb-0">
+            <div id="dropzone" class="col-md-12 offset-md-4">
                 <form action="{{ route('FileUpload') }}" class="dropzone" id="file-upload" enctype="multipart/form-data">
                     @csrf
                     <div class="dz-message">
                         Drag and Drop Single/Multiple Files Here<br>
                     </div>
-                </form>
+               </form>
             </div>
-
-            <div class="row mb-0">
-                <div class="col-md-12 offset-md-4">
-                    <button type="submit" class="btn btn-primary me-3">Submit</button>
-                <a type="button" href="{{ url('customer') }}" class="btn btn-primary ms-auto">Back</a>
             </div>
         </div>
     </form>
