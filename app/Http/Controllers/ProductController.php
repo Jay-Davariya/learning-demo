@@ -88,8 +88,9 @@ class ProductController extends Controller
         $product->delete();
 
         // Optionally return a response
-        return redirect()->route('product.data', ['id' => $id])->with('success', 'customer deleted');
-    }
+        Session::flash('success', 'Customer Product Deleted successfully');
+        return redirect()->back(); 
+       }
 
 }
 
